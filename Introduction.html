@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Metadata Section -->
     <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
-    <title>Document</title> <!-- Title of the webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsive design on mobile devices -->
+    <title>Enhanced Document</title> <!-- Specifies the title displayed on the browser tab -->
 </head>
+
 <body>
     <!-- Skip Link -->
     <!-- Provides a shortcut for users to jump directly to the main content -->
-    <a href="#main">class</a> 
+    <a href="#main">class</a>
 
     <!-- Navigation Menu -->
     <ul>
@@ -35,12 +38,96 @@
         </li>
     </ul>
 
-    
-
     <!-- Main Content Section -->
     <main id="main">
         <h1>Welcome to the Skip Link Example</h1> <!-- Main Heading -->
-        <p>This is the main content of the page. Use the skip link to quickly jump here.</p> <!-- Main Content Paragraph -->
+        <p>This is the main content of the page. Use the skip link to quickly jump here.</p>
+        <!-- Main Content Paragraph -->
+    </main>
+
+    <!-- Enhanced Content Below -->
+    <!-- Skip Link -->
+    <a href="#main">Skip to Main Content</a>
+    <!-- Provides a way for users (especially those using screen readers) to jump directly to the main content -->
+
+    <header>
+        <h1>Website Header</h1> <!-- Main heading for the webpage -->
+        <p>
+            Lorem ipsum dolor sit amet, <abbr title="consectetur">consectetur</abbr> adipisicing elit.
+            <!-- The "abbr" element is used to mark abbreviations. The "title" attribute provides the full form -->
+        </p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <ul>
+        <li>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <!-- Link to Google; opens in a new tab -->
+        </li>
+        <li>
+            <a href="mailto:vssingh@gmail.com" rel="noopener">Email</a>
+            <!-- Opens the default email client to send an email -->
+        </li>
+        <li>
+            <a href="sms:+1234567890">Message</a>
+            <!-- Opens the SMS app to send a message to the specified number -->
+        </li>
+        <li>
+            <a href="javascript:console.log('Hello!')">Run</a>
+            <!-- Executes a JavaScript command in the browser console -->
+        </li>
+    </ul>
+
+    <!-- Main Content Section -->
+    <main id="main">
+        <!-- Main content area of the page -->
+        <h2>Welcome to the Enhanced Example</h2> <!-- Section heading -->
+        <p>This is the main content of the page. Use the skip link to quickly jump here.</p>
+        <!-- Paragraph describing the main content -->
+
+        <!-- Address Section -->
+        <address>
+            <!-- Contact information for the webpage or author -->
+            Written by <a href="mailto:webmaster@example.com">John Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            123 Web Lane, Internet City<br>
+        </address>
+
+        <!-- Image Map Section -->
+        <h3>Image Map Example</h3> <!-- Section heading for the image map -->
+        <img src="example.jpg" alt="Example Image" usemap="#example-map" style="max-width: 300px;">
+        <!-- Image with an associated map; the "usemap" attribute links to the map -->
+
+        <map name="example-map">
+            <!-- The "map" element groups clickable areas -->
+            <area shape="rect" coords="0,0,100,100" href="https://example.com/section1" alt="Section 1">
+            <!-- Defines a rectangular clickable area with coordinates -->
+            <area shape="circle" coords="150,150,50" href="https://example.com/section2" alt="Section 2">
+            <!-- Defines a circular clickable area with center coordinates and radius -->
+        </map>
+
+        <!-- Aside Section -->
+        <aside>
+            <!-- Content related to the main content but not essential -->
+            <h4>Related Information</h4> <!-- Heading for the aside section -->
+            <p>This sidebar contains additional info or links relevant to the main content.</p>
+            <!-- Additional information related to the main content -->
+        </aside>
+
+        <!-- Audio Section -->
+        <h3>Audio Example</h3> <!-- Section heading for audio content -->
+        <audio controls autoplay loop muted preload="auto" crossorigin="anonymous">
+            <!-- Embeds audio content with playback controls -->
+            <source src="example-audio.mp3" type="audio/mpeg">
+            <!-- Audio source in MP3 format -->
+            <source src="example-audio.ogg" type="audio/ogg">
+            <!-- Audio source in OGG format -->
+            Your browser does not support the audio element.
+            <!-- Fallback message for unsupported browsers -->
+        </audio>
+
     </main>
 </body>
+
 </html>
